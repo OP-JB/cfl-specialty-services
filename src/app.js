@@ -4,7 +4,15 @@ import './css/app.css'
 
 const App = () => (
   <Fragment>
-    <h2>Central Florida Specialty Services</h2>
+    <nav>
+      <img id="logo" src="img/CFL-logo_transparent.png" />
+      <span id="slogan">Crating and third-party solutions</span>
+      <div class="nav-links-container">
+        <span>Services</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </nav>
   </Fragment>
 )
 

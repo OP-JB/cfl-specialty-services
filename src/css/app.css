@@ -1,3 +1,40 @@
+:root {
+  --dark-blue: #214194;
+}
+
 body, html {
   font-family: 'Muli', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--dark-blue);
+  height: 120px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+#logo {
+  height: 120px;
+}
+
+#slogan {
+  position: absolute;
+  left: 154px;
+  top: 86px;
+}
+
+.nav-links-container {
+  position: absolute;
+  right: 0;
+  top: 86px;
+}
+
+.nav-links-container span {
+  margin-right: 40px;
+  cursor: pointer;
 }
