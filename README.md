@@ -1,6 +1,6 @@
-# React Hot Module Replacement Boilerplate
+# CFL Specialty Services
 
-Boilerplate for using Webpack's Hot Module Replacement with Node and React
+Website for Central Florida Specialty Servicest
 
 ## Setup
 

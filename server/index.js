@@ -8,7 +8,7 @@ const webpackConfig = require('../webpack.config')
 const compiler = webpack(webpackConfig)
 
 const app = express()
-const PORT = process.env.PORT || 7224
+const PORT = process.env.PORT || 5800
 
 app.listen(PORT, () => console.log(`Server Listening on ${PORT}`))
 
@@ -23,13 +23,16 @@ app.use(middleware(compiler, {
   publicPath: webpackConfig.output.publicPath
 }))
 
-
 app.use(morgan('dev'))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(express.static(path.join(__dirname, '..', 'src')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../src/index.html'))
+}) // Send index.html for any other requests
 
 app.use((req, res, next) => {
   if (path.extname(req.path).length > 0) {

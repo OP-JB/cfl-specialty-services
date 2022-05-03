@@ -1,7 +1,7 @@
 {
-  "name": "React-HMR-Boilerplate",
+  "name": "cfl-specialty-services",
   "version": "1.0.0",
-  "description": "Boilerplate for using Webpack's Hot Module Replacement with Node and React",
+  "description": "Website for Central Florida Specialty Services",
   "main": "server/index.js",
   "scripts": {
     "clean": "rm dist/bundle.js",
