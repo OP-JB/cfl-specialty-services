@@ -1,0 +1,30 @@
+nav {
+	background-color: var(--dark-blue);
+	height: 120px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+#logo {
+	height: 120px;
+}
+
+#slogan {
+	position: absolute;
+	left: 154px;
+	top: 86px;
+}
+
+.nav-links-container {
+	position: absolute;
+	right: 0;
+	top: 86px;
+}
+
+.nav-links-container span {
+	margin-right: 40px;
+	cursor: pointer;
+}
