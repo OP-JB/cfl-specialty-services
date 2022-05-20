@@ -40,15 +40,14 @@ const App = () => (
           </ul>
         </div>
       </ContentBox>
-      {/* <ContentBox title="About Us">
+      <ContentBox title="About" iconSrc='img/about-us-icon.png'>
         <div className='about-us-container'>
-          <img src='img/about-us-icon.png' />
           <p>Servicing the Central Florida Area for over a decade, Central Florida Specialty Services provides quality workmanship in all of your relocation needs.  Our techs have received the highest level of training, allowing us to guarantee the safety of your most delicate posessions.</p>
           <br/>
           <p>CFL Specialty Services is licensed and insured</p>
         </div>
       </ContentBox>
-      <ContentBox title="Contact Us">
+      {/* <ContentBox title="Contact Us">
         <div className='contact-us-container'>
           <img src='img/location-icon.png' />
           <p>Servicing the Central Florida Area for over a decade, Central Florida Specialty Services provides quality workmanship in all of your relocation needs.  Our techs have received the highest level of training, allowing us to guarantee the safety of your most delicate posessions.</p>
