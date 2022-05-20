@@ -1,0 +1,35 @@
+.content-box-container {
+  border-bottom: 1px solid var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20%;
+}
+
+.content-box-container h4 {
+  font-size: 40px;
+  border-bottom: 3px solid var(--dark-blue);
+}
+
+.content-box-container img {
+  height: 160px;
+  margin: 20% -4px 0 0;
+}
+
+.content-box-container .services-container img,
+.content-box-container .contact-us-container img {
+  height: 96px;
+}
+
+.content-box-container .service-title {
+  font-weight: bold;
+}
+
+.content-box-container ul {
+  list-style: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.content-box-container ul {
+  margin-bottom: 16px;
+}
