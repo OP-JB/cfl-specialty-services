@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import '../css/navbar.css'
 
 const Navbar = () => (
-  <Fragment>
+  <div className="nav-container">
     <nav>
       <img id="logo" src="img/CFL-logo_transparent.png" />
       <span id="slogan">Crating and third-party solutions</span>
@@ -13,7 +13,7 @@ const Navbar = () => (
         <span>Contact</span>
       </div>
     </nav>
-  </Fragment>
+  </div>
 )
 
 export default Navbar

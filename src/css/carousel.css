@@ -1,12 +1,11 @@
 .container img {
   width: 100%;
-  height: auto;
 }
 
 h1 {
   color: #fff;
   position: absolute;
-  font-size: 90px;
+  font-size: 5em;
   font-weight: lighter;
   width: 700px;
   top: 700px;
