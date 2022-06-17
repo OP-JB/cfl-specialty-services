@@ -2,7 +2,9 @@
   --black: #000000;
   --dark-blue: #214194;
   --grey: #C4C4C4;
-  --beige: #FEFBED;
+  --beige: #ebe8d7;
+  --light-beige: #f8f7f3;
+  --white: #ffffff;
 }
 
 body, html {
@@ -10,11 +12,12 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: 'K2D';
-  background-color: var(--beige);
+  background-color: var(--light-beige);
 }
 
-.content-boxes-container {
-  margin-bottom: 2000px;
+.hz-center {
+  display: flex;
+  justify-content: center;
 }
 
 .text-center {

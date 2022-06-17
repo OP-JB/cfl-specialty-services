@@ -1,67 +1,70 @@
-.content-box-container {
-  border-bottom: 1px solid var(--black);
+.content-box {
+  /* border-bottom: 1px solid var(--black); */
   display: flex;
   justify-content: space-between;
   padding: 40px;
   min-height: 400px;
 }
 
-.content-box-container > div {
+.content-box:nth-child(even) {
+  background-color: var(--beige);
+}
+
+.content-box > div {
   width: 50%;
 }
 
 .content-right .services-container {
-  width: 65%;
+  width: 50%;
   display: flex;
   justify-content: center;
   margin-left: 70px;
 }
 
 .content-right .about-container {
-  width: 65%;
-  /* text-align: left; */
+  width: 50%;
   margin: 10% 25% 0 0;
   float: right;
 }
 
-.content-box-container h4 {
+.content-box h4 {
   font-size: 40px;
   margin-left: 30%;
   margin-right: 30%;
   border-bottom: 3px solid var(--dark-blue);
 }
 
-.content-box-container img {
+.content-box img {
   margin: 5% 0;
 }
 
-.content-box-container:first-child img,
-.content-box-container:last-child img  {
+.content-box:first-child img,
+.content-box:last-child img  {
   height: 160px;
 }
 
-.content-box-container:first-child img {
+.content-box:first-child img {
   margin-right: -4px;
 }
 
-.content-box-container:last-child img {
+.content-box:last-child img {
   margin-right: 8px;
 }
 
-.content-box-container:nth-child(2) img {
+.content-box:nth-child(2) img {
   height: 120px;
 }
 
-.content-box-container .service-title {
+.content-box .service-title {
   font-weight: bold;
 }
 
-.content-box-container ul {
+.content-box ul {
   list-style: none;
   padding: 8px;
   text-align: left;
 }
 
-.content-box-container ul {
+.content-box ul {
   margin-bottom: 16px;
 }

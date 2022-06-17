@@ -4,6 +4,8 @@ import Navbar from './components/navbar'
 import ContentBox from './components/content-box'
 import Map from './components/map'
 import './css/app.css'
+import ContactInfo from './components/contact-info'
+import Footer from './components/footer'
 
 const services = [
   {
@@ -28,12 +30,12 @@ const App = () => (
       <ContentBox title="Services" iconSrc='img/box-icon.png'>
         <div className='services-container'>
           <ul>
-            {services.length && services.map(({title, rows}) => (
-              <Fragment>
+            {services.length && services.map(({title, rows}, idx) => (
+              <Fragment key={title + String(idx)}>
                 <li className='service-title'>{title}</li>
                 <ul>
-                  {rows.map(row => (
-                    <li>{row}</li>
+                  {rows.map((row, idx) => (
+                    <li key={row + String(idx)}>{row}</li>
                   ))}
                 </ul>
               </Fragment>
@@ -51,9 +53,11 @@ const App = () => (
       <ContentBox title="Contact Us" iconSrc='img/location-icon.png'>
         <div className='contact-us-container'>
           <Map />
+          <ContactInfo />
         </div>
       </ContentBox>
     </div>
+    <Footer />
   </Fragment>
 )
 
