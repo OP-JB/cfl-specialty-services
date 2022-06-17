@@ -3,11 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  min-height: 400px;
-}
-
-.content-box:nth-child(even) {
-  background-color: var(--beige);
+  min-height: 440px;
 }
 
 .content-box > div {
@@ -23,7 +19,8 @@
 
 .content-right .about-container {
   width: 50%;
-  margin: 10% 25% 0 0;
+  margin-right: 25%;
+  margin-top: 40px;
   float: right;
 }
 
@@ -67,4 +64,12 @@
 
 .content-box ul {
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 720px) {
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+    min-height: 700px;
+  }
 }
