@@ -9,7 +9,14 @@ nav {
 }
 
 #logo {
+	display: block;
 	height: 120px;
+}
+
+#mobile-logo,
+.mobile-nav-menu,
+.mobile-nav-icon {
+	display: none;
 }
 
 #slogan {
@@ -27,4 +34,44 @@ nav {
 .nav-links-container span {
 	margin-right: 40px;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	#logo,
+	#slogan,
+	.nav-links-container {
+		display: none;
+	}
+
+	#mobile-logo {
+		display: block;
+		height: 180px;
+		padding-top: 20px;
+	}
+
+	.mobile-nav-icon {
+		display: block;
+		margin-right: 20px;
+		height: 16px;
+		cursor: pointer;
+	}
+
+	.mobile-nav-menu {
+		display: block;
+		position: absolute;
+		top: 122px;
+		right: 20px;
+		background-color: var(--dark-blue);
+		border-radius: 5px;
+		padding: 20px;
+	}
+
+	.mobile-nav-links-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile-nav-links-container span {
+		margin: 10px 20px 20px;
+	}
 }

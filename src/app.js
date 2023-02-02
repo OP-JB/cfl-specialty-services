@@ -57,7 +57,7 @@ const App = () => {
         <div className='content-box-container' ref={aboutRef}>
           <ContentBox title="About" iconSrc='img/about-icon.png'>
             <div className='about-container'>
-              <p>Servicing Volusia, Orange, and St. John’s county, Central Florida Specialty Services offers quality workmanship in all of your relocation specialty needs.  We provide on-site crating for your most delicate possessions. </p>
+              <p>Servicing Volusia, Orange, and St. John`s county, Central Florida Specialty Services offers quality workmanship in all of your relocation specialty needs.  We provide on-site crating for your most delicate possessions. </p>
               <br/>
               <p>CFL Specialty Services is licensed and insured. Our techs have each gone through a thorough background-check, and have the necessary tools and experience to ensure the highest level of professionalism.</p>
             </div>

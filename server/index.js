@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, '..', 'src')))
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../src/index.html'))
-}) // Send index.html for any other requests
+})
 
 app.use((req, res, next) => {
   if (path.extname(req.path).length > 0) {
