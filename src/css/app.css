@@ -13,11 +13,7 @@ body, html {
   margin: 0;
   font-family: 'K2D';
   background-color: var(--light-beige);
-}
-
-.hz-center {
-  display: flex;
-  justify-content: center;
+  font-size: 18px;
 }
 
 .text-center {
@@ -26,4 +22,107 @@ body, html {
 
 .content-box-container:nth-child(even) {
   background-color: var(--beige);
+}
+
+.content-box .service-title {
+  font-weight: bold;
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin: 40px 0 10px;
+}
+
+.services-container .content-box ul {
+  margin-left: 40px;
+  padding: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.services-container .content-box ul {
+  margin-bottom: 16px;
+}
+
+.about-container .content-right {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+.about-container .content-box img {
+  max-height: 120px;
+}
+
+.contact-us-container .content-box {
+  margin-bottom: 60px;
+}
+
+.contact-us-container .content-box img {
+  max-height: 140px;
+}
+
+.contact-us-container .content-right {
+  display: flex;
+  justify-content: center;
+  margin-right: 80px;
+}
+
+.contact-us-container .content-right .map-container {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .services-container .content-right {
+    width: calc(100% - 40px);
+    justify-content: center;
+    margin: 20px 20px 100px;
+  }
+
+  .content-box .service-title {
+    margin-top: 60px;
+  }
+
+  .about-container .content-box {
+    width: calc(100% - 80px);
+    padding: 80px 40px 120px;
+  }
+
+  .about-container .content-box p {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .about-container .content-box h4 {
+    margin-bottom: 40px;
+  }
+
+  .about-container .content-box img {
+    margin-bottom: 40px;
+  }
+
+  .about-container .content-right {
+    margin-top: 0px;
+    width: calc(100% - 40px);
+    margin-bottom: 80px;
+  }
+
+  .contact-us-container .content-box {
+    margin: 40px 0 80px;
+  }
+
+  .contact-us-container .content-box h4 {
+    margin-bottom: 60px;
+  }
+
+  .contact-us-container .content-box img {
+    margin-bottom: 40px;
+  }
+
+  .contact-us-container .content-box .map-container {
+    margin-bottom: 120px;
+  }
 }

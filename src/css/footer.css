@@ -15,6 +15,11 @@
 #footer-logo {
   height: 40px;
   margin-left: 20px;
+  display: unset;
+}
+
+#mobile-footer-logo {
+  display: none;
 }
 
 .copyright-text {
@@ -28,4 +33,26 @@
 
 .footer-links-container span {
   margin-left: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+	#footer-logo {
+		display: none;
+	}
+
+	#mobile-footer-logo {
+		display: block;
+    height: 100px;
+    padding-top: 10px;
+	}
+
+  .footer-links-container {
+    position: relative;
+  }
 }

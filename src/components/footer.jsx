@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='footer-logo-container'>
-        <img id='footer-logo' src='img/CFL-logo_transparent.png' />
+        <img id='footer-logo' src='img/CFL-logo.png' />
+        <img id='mobile-footer-logo' src='img/CFL-logo_mobile.png' />
       </div>
       <div className='footer-links-container'>
         <span className='copyright-text'>&copy; Copyright 2022 CFL Specialty Services</span>

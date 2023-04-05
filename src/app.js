@@ -36,39 +36,33 @@ const App = () => {
       <Navbar scrollToSection={scrollToRef} />
       <Carousel />
       <div className='content-boxes-container'>
-        <div className='content-box-container' ref={servicesRef}>
+        <div className='services-container content-box-container' ref={servicesRef}>
           <ContentBox title="Services" iconSrc='img/box-icon.png'>
-            <div className='services-container'>
-              <ul>
-                {services.length && services.map(({title, rows}, idx) => (
-                  <Fragment key={title + String(idx)}>
-                    <li className='service-title'>{title}</li>
-                    <ul>
-                      {rows.map((row, idx) => (
-                        <li key={row + String(idx)}>{row}</li>
-                      ))}
-                    </ul>
-                  </Fragment>
-                ))}
-              </ul>
-            </div>
+            <ul>
+              {services.length && services.map(({title, rows}, idx) => (
+                <Fragment key={title + String(idx)}>
+                  <h5 className='service-title'>{title}</h5>
+                  <ul>
+                    {rows.map((row, idx) => (
+                      <li key={row + String(idx)}>{row}</li>
+                    ))}
+                  </ul>
+                </Fragment>
+              ))}
+            </ul>
           </ContentBox>
         </div>
-        <div className='content-box-container' ref={aboutRef}>
+        <div className='about-container content-box-container' ref={aboutRef}>
           <ContentBox title="About" iconSrc='img/about-icon.png'>
-            <div className='about-container'>
-              <p>Servicing Volusia, Orange, and St. John`s county, Central Florida Specialty Services offers quality workmanship in all of your relocation specialty needs.  We provide on-site crating for your most delicate possessions. </p>
-              <br/>
-              <p>CFL Specialty Services is licensed and insured. Our techs have each gone through a thorough background-check, and have the necessary tools and experience to ensure the highest level of professionalism.</p>
-            </div>
+            <p>Servicing Volusia, Orange, and St. John`s county, Central Florida Specialty Services offers quality workmanship in all of your relocation specialty needs.  We provide on-site crating for your most delicate possessions. </p>
+            <br/>
+            <p>CFL Specialty Services is licensed and insured. Our techs have each gone through a thorough background-check, and have the necessary tools and experience to ensure the highest level of professionalism.</p>
           </ContentBox>
-        </div>
-        <div className='content-box-container' ref={contactRef}>
+      </div>
+        <div className='contact-us-container content-box-container' ref={contactRef}>
           <ContentBox title="Contact Us" iconSrc='img/location-icon.png'>
-            <div className='contact-us-container'>
-              <Map />
-              <ContactInfo />
-            </div>
+            <ContactInfo />
+            <Map />
           </ContentBox>
         </div>
       </div>
