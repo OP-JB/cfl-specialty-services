@@ -25,8 +25,9 @@ nav {
 
 #slogan {
 	position: absolute;
-	left: 154px;
-	top: 86px;
+	left: 156px;
+	top: 82px;
+	font-size: 15px;
 }
 
 .nav-links-container {

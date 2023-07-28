@@ -3,7 +3,7 @@
   color: var(--white);
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 120px;
 }
 
 .footer .footer-logo-container {
@@ -13,9 +13,20 @@
 }
 
 #footer-logo {
+  display: unset;
+}
+
+#footer-logo img {
   height: 40px;
   margin-left: 20px;
-  display: unset;
+}
+
+#footer-logo span {
+  position: absolute;
+  left: 72px;
+  margin-top: 25px;
+  /* bottom: 240px; */
+  font-size: 8px;
 }
 
 #mobile-footer-logo {
@@ -23,7 +34,7 @@
 }
 
 .copyright-text {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-links-container {
@@ -49,7 +60,6 @@
 	#mobile-footer-logo {
 		display: block;
     height: 100px;
-    padding-top: 10px;
 	}
 
   .footer-links-container {

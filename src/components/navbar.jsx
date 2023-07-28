@@ -27,15 +27,15 @@ const Navbar = ({scrollToSection}) => {
   return (
     <div className="nav-container">
       <nav>
-        <img id="logo" src="img/CFL-logo.png" />
-        <img id="mobile-logo" src="img/CFL-logo_mobile.png" />
+        <img id="logo" src="assets/img/CFL-logo.png" />
+        <img id="mobile-logo" src="assets/img/CFL-logo_mobile.png" />
         <span id="slogan">Crating and third-party solutions</span>
         <div className="nav-links-container">
           <span onClick={() => scrollToSection(0)}>Services</span>
           <span onClick={() => scrollToSection(1)}>About</span>
           <span onClick={() => scrollToSection(2)}>Contact</span>
         </div>
-        <img src='img/hamburger-menu.png' className='mobile-nav-icon' onClick={toggleMobileNav} />
+        <img src='assets/img/hamburger-menu.png' className='mobile-nav-icon' onClick={toggleMobileNav} />
         {mobileNavIsVisible && (
           <div className='mobile-nav-menu'>
             <div className="mobile-nav-links-container">

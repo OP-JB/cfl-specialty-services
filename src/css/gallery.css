@@ -1,0 +1,91 @@
+.gallery-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px 160px;
+  background-color: var(--beige);
+}
+
+.gallery-container h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--dark-blue);
+}
+
+.gallery-container h4:hover {
+  cursor: pointer;
+  font-weight: 450;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.95;
+
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  margin: 10% 25%;
+  opacity: 1;
+}
+
+.placeholder-img {
+  max-height: 600px;
+}
+
+.modal-container span {
+  display: block;
+  position: absolute;
+  font-size: 32px;
+  color: var(--white);
+  z-index: 2;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px var(--black);
+}
+
+.modal-wrapper {
+  position: relative;
+}
+
+.modal-container .modal-close-btn {
+  right: 20px;
+  top: 10px;
+}
+
+.modal-container .arrows {
+  top: calc(50% - 36px);
+  font-size: 72px;
+  font-weight: 300;
+}
+
+.modal-container .left-arrow {
+  left: 20px;
+}
+
+.modal-container .right-arrow {
+  right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-container .placeholder-img {
+    width: 80%;
+  }
+
+  .modal-container {
+    margin: 33% 3%;
+  }
+}

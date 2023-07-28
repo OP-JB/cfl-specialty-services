@@ -1,0 +1,35 @@
+
+.services-container .content-box {
+  padding-bottom: 60px;
+}
+
+.services-container .content-box ul {
+  margin: 20px 40px;
+  padding: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.services-container .content-box .service-title {
+  font-weight: bold;
+  color: var(--dark-blue);
+  font-size: 24px;
+  margin: 40px 0 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .services-container .content-right {
+    width: calc(100% - 40px);
+    justify-content: center;
+    margin: 20px 20px 100px;
+  }
+
+  .services-container .content-box .service-title {
+    margin-top: 40px;
+  }
+
+  .services-container .content-box img {
+    max-height: 100px;
+    margin-bottom: 20px;
+  }
+}
