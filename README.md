@@ -1,6 +1,6 @@
 # CFL Specialty Services
 
-Website for Central Florida Specialty Servicest
+Website for Central Florida Specialty Services
 
 ## Setup
 
@@ -15,7 +15,7 @@ npm install
 To run in hot module reloading mode:
 
 ```sh
-npm start
+npm run start-server
 ```
 
 To create a production build:
@@ -32,4 +32,4 @@ npm run build-dev
 
 ## Running
 
-Open the file `dist/index.html` in your browser
+Open localhost:5800 in your web browser
