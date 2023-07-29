@@ -1,6 +1,6 @@
 import React, {useRef, Fragment} from 'react'
 import './css/app.css'
-import { carouselImages } from './constants'
+import { heroCarouselImages } from './constants.js'
 import Navbar from './components/navbar'
 import Carousel from './components/carousel'
 import Services from './components/services'
@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div ref={topRef}>
       <Navbar scrollToSection={scrollToRef} />
-      <Carousel images={carouselImages} autoPlay={true} />
+      <Carousel images={heroCarouselImages} autoPlay={true} />
       <div className='content-boxes-container'>
         <Services ref={servicesRef} />
         <About ref={aboutRef} />
