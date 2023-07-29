@@ -1,4 +1,5 @@
 :root {
+  /* color vars */
   --black: #0f1010;
   --dark-blue: #214194;
   --grey: #C4C4C4;
@@ -8,10 +9,9 @@
 }
 
 body, html {
-  font-family: 'Muli', sans-serif;
   padding: 0;
   margin: 0;
-  font-family: 'K2D';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--light-beige);
   font-size: 18px;
 }

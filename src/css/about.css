@@ -5,6 +5,10 @@
   margin-right: 40px;
 }
 
+.about-container .content-box p {
+  opacity: 0.9;
+}
+
 .about-container .content-box img {
   max-height: 120px;
 }
@@ -17,7 +21,8 @@
 
   .about-container .content-box p {
     margin-left: 60px;
-    margin-right: 60px;
+    margin-right: 40px;
+    font-size: 15px;
   }
 
   .about-container .content-box h4 {

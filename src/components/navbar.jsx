@@ -34,6 +34,7 @@ const Navbar = ({scrollToSection}) => {
           <span onClick={() => scrollToSection(0)}>Services</span>
           <span onClick={() => scrollToSection(1)}>About</span>
           <span onClick={() => scrollToSection(2)}>Contact</span>
+          <span onClick={() => scrollToSection(3)}>Gallery</span>
         </div>
         <img src='assets/img/hamburger-menu.png' className='mobile-nav-icon' onClick={toggleMobileNav} />
         {mobileNavIsVisible && (
@@ -42,6 +43,7 @@ const Navbar = ({scrollToSection}) => {
               <span onClick={() => scrollToSectionFromMobileNav(0)}>Services</span>
               <span onClick={() => scrollToSectionFromMobileNav(1)}>About</span>
               <span onClick={() => scrollToSectionFromMobileNav(2)}>Contact</span>
+              <span onClick={() => scrollToSectionFromMobileNav(3)}>Gallery</span>
             </div>
           </div>
         )}

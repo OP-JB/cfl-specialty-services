@@ -12,7 +12,7 @@ const Footer = () => {
         <img id='mobile-footer-logo' src='assets/img/CFL-logo_mobile.png' />
       </div>
       <div className='footer-links-container'>
-        <span className='copyright-text'>&copy; 2022 CFL Specialty Services</span>
+        <div className='copyright-text'>&copy; 2023 CFL Specialty Services</div>
       </div>
     </footer>
   )

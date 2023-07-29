@@ -15,8 +15,9 @@
 @media screen and (max-width: 720px) {
   .contact-info {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     text-align: left;
+    font-size: 16px;
   }
   
   .contact-info p {

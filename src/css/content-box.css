@@ -53,9 +53,6 @@
   .content-box {
     flex-direction: column;
     width: calc(100% - 80px);
-  }
-
-  .content-box {
     display: unset;
     padding: 0 20px;
   }

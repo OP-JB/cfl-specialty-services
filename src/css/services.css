@@ -4,17 +4,17 @@
 }
 
 .services-container .content-box ul {
-  margin: 20px 40px;
+  margin: 10px 40px;
   padding: 0;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .services-container .content-box .service-title {
   font-weight: bold;
   color: var(--dark-blue);
-  font-size: 24px;
-  margin: 40px 0 10px;
+  font-size: 20px;
+  margin: 40px 20px 0;
 }
 
 @media screen and (max-width: 720px) {
@@ -25,7 +25,11 @@
   }
 
   .services-container .content-box .service-title {
-    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .services-container .content-box ul {
+    font-size: 16px;
   }
 
   .services-container .content-box img {

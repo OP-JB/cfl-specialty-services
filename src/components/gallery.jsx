@@ -18,8 +18,6 @@ const Gallery = forwardRef(({scrollToTop}, ref) => {
     document.body.style.overflow = 'unset';
     setModalIsOpen(false);
   }
-
-  const 
   
   return (
     <div className='gallery-container' ref={ref}>
@@ -30,10 +28,8 @@ const Gallery = forwardRef(({scrollToTop}, ref) => {
             <div className='modal-overlay'></div>
             <div className='modal-container'>
               <div className='modal-wrapper'>
-                <span className="modal-close-btn" onClick={closeModal}>&#x2715;</span>
-                <span className="left-arrow arrows" onClick={goToPreviousImage}>&#x2039;</span> {/*move to carousel*/}
+                <div className="modal-close-btn" onClick={closeModal}>&#x2715;</div>
                 <Carousel images={galleryCarouselImages} />
-                <span className="right-arrow arrows" onClick={goToNextImage}>&#8250;</span> {/*move to carousel*/}
               </div>
             </div>
           </Fragment>

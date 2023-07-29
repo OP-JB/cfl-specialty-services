@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div ref={topRef}>
       <Navbar scrollToSection={scrollToRef} />
-      <Carousel images={carouselImages} />
+      <Carousel images={carouselImages} autoPlay={true} />
       <div className='content-boxes-container'>
         <Services ref={servicesRef} />
         <About ref={aboutRef} />
