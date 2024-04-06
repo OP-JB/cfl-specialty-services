@@ -1,7 +1,7 @@
 import React, { Fragment, forwardRef, useRef, useState } from 'react'
 import '../css/gallery.css'
 import Carousel from './carousel.jsx';
-import { galleryCarouselImages } from '../constants.js';
+import { galleryCarouselImages } from '../constants/images.js';
 
 const Gallery = forwardRef(({scrollToTop}, ref) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

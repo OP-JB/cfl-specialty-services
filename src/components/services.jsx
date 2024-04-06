@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 import '../css/services.css'
 import ContentBox from './content-box.jsx'
-import {services} from '../constants.js'
+import {services} from '../constants/services.js'
 
 const Services = forwardRef((props, ref) => {
   return (
