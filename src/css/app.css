@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'K2D-Regular';
+  src: url('/src/assets/img/fonts/K2D/K2D-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'K2D-Bold';
+  src: url('/src/assets/img/fonts/K2D/K2D-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'K2D-Light';
+  src: url('/src/assets/img/fonts/K2D/K2D-Light.ttf');
+}
+
 :root {
   /* color vars */
   --black: #0f1010;
@@ -9,15 +24,23 @@
 }
 
 body, html {
-  padding: 0;
-  margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--light-beige);
+  font-family: 'K2D-Regular';
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-bold {
+  font-family: 'K2D-Bold';
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-light {
+  font-family: 'K2D-Light';
 }
 
 .content-box-container:nth-child(even) {

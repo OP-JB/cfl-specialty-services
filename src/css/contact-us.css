@@ -12,8 +12,19 @@
   margin-right: 80px;
 }
 
-.contact-us-container .content-right .map-container {
+.contact-us-container .content-right .coverage-container {
   margin-left: 20px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  display: block;
+}
+
+.contact-us-container .content-right .coverage-container img {
+  width: 400px;
+  height: 600px;
+  display: block;
 }
 
 @media screen and (max-width: 720px) {
@@ -35,7 +46,7 @@
     padding: 0 20px;
   }
 
-  .contact-us-container .content-box .map-container {
+  .contact-us-container .content-box .coverage-container {
     margin-bottom: 120px;
     margin-left: 40px;    
   }
